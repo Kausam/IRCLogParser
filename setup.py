@@ -12,11 +12,6 @@ except ImportError:
 	pip.main(['install','numpy'])
 
 try:
-	import scipy
-except ImportError:
-	pip.main(['install','scipy'])
-
-try:
     import pypandoc
     long_description = pypandoc.convert('README.md', 'rst')
 except(IOError, ImportError):
